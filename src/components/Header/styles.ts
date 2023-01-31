@@ -41,7 +41,7 @@ align-items: center;
 justify-content: space-evenly;
 width: 90px;
 height: 45px;
-left: 1262px;
+left: 90%;
 top: 29px;
 background: #FFFFFF;
 border-radius: 8px;
