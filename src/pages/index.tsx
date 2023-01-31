@@ -1,20 +1,13 @@
+import { Home } from "@/templates/Home";
 import React from "react";
 import { api } from "./api/axios";
 
-export default function Home({ data }) {
-  const products = data.products;
 
+export default function HomePage({ data }: any) {
   return (
-    <>
-      <h1>Produtos:</h1>
-      <ul>
-        {products.map((product) => (
-          <li key={product.id}>
-            {product.id}: {product.name}
-          </li>
-        ))}
-      </ul>
-    </>
+
+    <Home data={data} />
+    
   );
 }
 
