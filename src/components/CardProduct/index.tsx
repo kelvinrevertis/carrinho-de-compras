@@ -1,3 +1,4 @@
+import {ShoppingBagOpen } from 'phosphor-react';
 import * as C from './styles'
 
 interface Product {
@@ -8,21 +9,32 @@ interface Product {
     photo: string
 }
 
-// export const formatPrice = (price)=>{
-
-// }
+function formatPrice(price: number) {
+    return new Intl.NumberFormat("pt-BR", {
+      style: "currency",
+      currency: "BRL",
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0
+    }).format(price);
+  }
 
 export function CardProduct(product: Product) {
     if (!product) return null;
 
     return (
 
-        <C.ProductBoxContainer>
-            <h1>{product.name}</h1>
-            <button>R${product.price}</button>
-            <img src={product.photo} alt="" />
+        <C.ProductBoxCard>
+            <img src={product.photo} title={product.name} />
+            <div>
+            <span>{product.name}</span>
+            <span id='price'>{formatPrice(product.price)}</span>
+            </div>
             <p>{product.description}</p>
-        </C.ProductBoxContainer>
+            <button>
+            <ShoppingBagOpen fontSize={18} />
+            COMPRAR
+            </button>
+        </C.ProductBoxCard>
 
     )
 }
