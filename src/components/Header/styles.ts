@@ -35,6 +35,7 @@ export const ButtonCartContainer = styled.button`
   background: #FFFFFF;
   border-radius: 8px;
   border: none;
+  cursor: pointer;
 
   span{
     font-weight: 700;
