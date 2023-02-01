@@ -11,18 +11,23 @@ top: 0;
 bottom: 0;
 right: 0;
 background-color: #0F52BA;
-/* padding: 1.5rem 1.75rem; */
 box-shadow: -5px 0px 6px rgba(0, 0, 0, 0.13);
-/* flex-direction: column; */
 `
 
 export const CloseButton = styled.button`
 
-position: absolute;
-width: 10%;
-top: 0;
-left: 0;
-
-
+position: fixed; 
+right: 22px; 
+top: 22px;
+width: 38px;
+height: 38px;
+border-radius: 50%;
+background-color: black;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 20px;
+cursor: pointer;
 
 `
