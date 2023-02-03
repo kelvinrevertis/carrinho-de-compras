@@ -10,7 +10,7 @@ export function Header() {
                 MKS<span>Sistemas</span>
             </C.TitleContainer>
             <Dialog.Root>
-                <Dialog.Trigger>
+                <Dialog.Trigger style={{ borderRadius: '8px', borderColor: 'white' }}>
                     <C.ButtonCartContainer>
                         <ShoppingCart size={21} />
                         <span>0</span>

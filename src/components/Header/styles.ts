@@ -25,8 +25,7 @@ export const TitleContainer = styled.div`
   }
 `;
 
-export const ButtonCartContainer = styled.button`
-
+export const ButtonCartContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -34,12 +33,12 @@ export const ButtonCartContainer = styled.button`
   height: 45px;
   background: #FFFFFF;
   border-radius: 8px;
-  border: none;
   cursor: pointer;
+  padding: 8px;
 
   span{
     font-weight: 700;
     font-size: 20px;
     color: #000000;
-}
+  }
 `;
