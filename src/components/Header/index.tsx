@@ -1,3 +1,4 @@
+import * as Dialog from '@radix-ui/react-dialog'
 import * as C from './styles'
 import { ShoppingCart } from "phosphor-react";
 import { useState } from 'react';
@@ -18,9 +19,14 @@ export function Header() {
                 <span>0</span>
             </C.ButtonCartContainer>
             {showSidebar && (
-                <CartBar>
+                <Dialog.Portal>
+                    <h1>HELLOW</h1>
+                    {/* <CartBar>
 
-                </CartBar>
+                    </CartBar> */}
+                </Dialog.Portal>
+
+
             )}
         </C.HeaderContainer>
     )
