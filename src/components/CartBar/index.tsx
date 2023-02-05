@@ -6,9 +6,11 @@ export function CartBar() {
 
         <C.CartBarContainer>
             <div>Carrinho de compras</div>
-            {/* <Dialog.Close>
-                <C.CloseButton><p>X</p></C.CloseButton>
-            </Dialog.Close> */}
+            <C.CloseButton>
+            <Dialog.Close style={{backgroundColor: "black"}}>
+                <p style={{color:"white"}}>X</p>
+            </Dialog.Close>
+            </C.CloseButton>
 
         </C.CartBarContainer>
 
