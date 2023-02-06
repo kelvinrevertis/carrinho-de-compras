@@ -12,6 +12,11 @@ export function CartBar() {
             </Dialog.Close>
             </C.CloseButton>
 
+            <C.Footer>
+                Finalizar Compra
+            </C.Footer>
+
+
         </C.CartBarContainer>
 
     )
