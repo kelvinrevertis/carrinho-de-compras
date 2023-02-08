@@ -13,6 +13,12 @@ right: 0;
 background-color: #0F52BA;
 box-shadow: -5px 0px 6px rgba(0, 0, 0, 0.13);
 `
+export const Header = styled.h2`
+
+    padding: 37px 47px;
+    font-size: 28px;
+    color: #FFFFFF;
+`
 
 export const CloseButton = styled.button`
 
